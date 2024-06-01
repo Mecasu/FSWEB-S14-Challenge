@@ -20,8 +20,8 @@ public class MainTest {
 
     @BeforeEach
     void setUp() {
-        hamburger = new Hamburger("Basic", "NORMAL", 4, "WRAP");
-        healthyBurger = new HealthyBurger("Vegan Burger", 5.67, "Sandwich");
+        hamburger = new Hamburger("Basic", "NORMAL", "WRAP", 4);
+        healthyBurger = new HealthyBurger("Vegan Burger", "Sandwich", 5.67);
         deluxeBurger = new DeluxeBurger();
     }
 

@@ -43,10 +43,27 @@ public class Hamburger {
         this.addition4Price = addition4Price;
     }
 
+
     public double itemizeHamburger() {
-        double totalPrice = price + addition1Price + addition2Price + addition3Price + addition4Price;
+
         System.out.println("Name: " + name + "\nMeat: " + meat + "\nBreadRollType: " + breadRollType + "\nAddition1: " + addition1Name + "\nAddition2: " + addition2Name + "\nAddition3: " + addition3Name + "\nAddition4: " + addition4Name);
-        System.out.println("Toplam: " + totalPrice);
-        return totalPrice;
+        System.out.println("Toplam: " + price + addition1Price + addition2Price + addition3Price + addition4Price);
+        return price + addition1Price + addition2Price + addition3Price + addition4Price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getMeat() {
+        return meat;
+    }
+
+    public String getBreadRollType() {
+        return breadRollType;
+    }
+
+    public double getPrice() {
+        return price + addition1Price + addition2Price + addition3Price + addition4Price;
     }
 }
